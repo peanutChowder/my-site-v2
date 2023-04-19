@@ -1,22 +1,18 @@
-import logo from './assets/logo.svg';
 import styles from './App.module.scss';
 
 function App() {
     return (
         <div className={styles.App}>
-            <header className={styles['App-header']}>
-                <img src={logo} className={styles['App-logo']} alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className={styles['App-link']}
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
+            <header className={styles.header}>
+                <span className={styles.nav}>
+                    <p>Jacob Feng</p>
+                    <a href="/" className={styles['header-links']}>
+                        My Timeline{' '}
+                    </a>
+                    <a href="/" className={styles['header-links']}>
+                        Link
+                    </a>
+                </span>
             </header>
         </div>
     );
